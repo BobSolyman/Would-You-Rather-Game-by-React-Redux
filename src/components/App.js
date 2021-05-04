@@ -7,8 +7,9 @@ import NewQuestion from "./NewQuestion"
 import Nav from "./Nav"
 import Login from "./Login"
 import QuestionPage from "./QuestionPage"
-import { BrowserRouter as Router, Route } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Leaderboard from "./Leaderboard"
+import Error404 from "./Error404"
 
 class App extends Component {
   componentDidMount() {
@@ -28,11 +29,14 @@ class App extends Component {
         <div className="container">
           {this.props.loading === true ? null : (
             <div>
-              <Route path="/" exact component={Dashboard} />
-              <Route path="/leaderboard" component={Leaderboard} />
-              <Route path="/add" component={NewQuestion} />
-              <Route path="/login" component={Login} />
-              <Route path="/questions/:id" component={QuestionPage} />
+              <Switch>
+                <Route path="/" exact component={Dashboard} />
+                <Route path="/leaderboard" component={Leaderboard} />
+                <Route path="/add" component={NewQuestion} />
+                <Route path="/login" component={Login} />
+                <Route path="/questions/:id" component={QuestionPage} />
+                <Route path="*" exact={true} component={Error404} />
+              </Switch>
             </div>
           )}
         </div>

@@ -45,7 +45,7 @@ export function handleQuestionAnswer(qid, choice) {
 
     return saveQuestionAnswer({ authedUser, qid, answer: choice })
       .then(() => {
-        dispatch(answerQuestion(qid, authedUser, choice))
+        dispatch(answerQuestion({ qid, authedUser, answer: choice }))
         dispatch(addMyAnswer(authedUser, qid, choice))
       })
       .then(() => dispatch(hideLoading()))
