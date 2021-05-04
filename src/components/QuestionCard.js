@@ -8,7 +8,7 @@ class QuestionCard extends Component {
     const { question } = this.props
 
     if (question === null) {
-      return <p>This question doesn't exist</p>
+      return <h2 className="center">This question doesn't exist</h2>
     }
 
     const { id, name, avatar, timestamp, optionOne, optionTwo } = question

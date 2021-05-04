@@ -21,7 +21,7 @@ export default function Nav({ authedUser }) {
             <span style={{ color: "#fff" }}>Leaderboard</span>
           </NavLink>
         </li>
-        <li style={{ paddingLeft: "65%" }}></li>
+        <li style={{ paddingLeft: "60%" }}></li>
         <li>
           <span style={{ color: "#fff" }}>Hello, {authedUser}</span>
         </li>
