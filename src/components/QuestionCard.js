@@ -19,7 +19,9 @@ class QuestionCard extends Component {
         <div className="tweet-info">
           <h4>{name}</h4>
           <h3 style={{ fontStyle: "oblique" }}>Would You Rather...</h3>
-          <div style={{ fontStyle: "italic" }}>{formatDate(timestamp)}</div>
+          <div style={{ fontStyle: "italic" }}>
+            Date created: {formatDate(timestamp)}
+          </div>
           <h4 style={{ backgroundColor: "yellow" }}>
             {optionOne.text.toUpperCase()}
           </h4>

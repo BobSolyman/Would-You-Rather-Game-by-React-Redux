@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import Tweet from "./Tweet"
 import QuestionCard from "./QuestionCard"
 
 class Dashboard extends Component {
@@ -60,6 +59,7 @@ class Dashboard extends Component {
 }
 
 function mapStateToProps({ questions, authedUser }) {
+  // eslint-disable-next-line
   const ans = Object.keys(questions).filter((q) => {
     let q1 = questions[q].optionOne.votes
     let q2 = questions[q].optionTwo.votes
@@ -68,6 +68,7 @@ function mapStateToProps({ questions, authedUser }) {
       return q
     }
   })
+  // eslint-disable-next-line
   const unans = Object.keys(questions).filter((q) => {
     let q1 = questions[q].optionOne.votes
     let q2 = questions[q].optionTwo.votes
