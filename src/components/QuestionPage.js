@@ -30,10 +30,8 @@ class QuestionPage extends Component {
     const { choice } = this.state
     const { dispatch, question } = this.props
 
-    console.log("bos ya basha ", question.id, " ", choice)
     dispatch(handleQuestionAnswer(question.id, choice))
 
-    console.log(this.props)
     this.setState(() => ({
       choice: "",
     }))
@@ -80,7 +78,7 @@ class QuestionPage extends Component {
               <container className="tweet">
                 <h4 className="tweet-data">
                   {optionOne.votes.length} out of{" "}
-                  {optionOne.votes.length + optionTwo.votes.length} votes
+                  {optionOne.votes.length + optionTwo.votes.length} votes ({(optionOne.votes.length/(optionOne.votes.length + optionTwo.votes.length))*100}%)
                 </h4>
                 <h3>Would you rather {optionOne.text}</h3>
                 {answer === "optionOne" && (
@@ -94,7 +92,7 @@ class QuestionPage extends Component {
               <div className="tweet">
                 <h4 className="tweet-data">
                   {optionTwo.votes.length} out of{" "}
-                  {optionOne.votes.length + optionTwo.votes.length} votes
+                  {optionOne.votes.length + optionTwo.votes.length} votes ({(optionTwo.votes.length/(optionOne.votes.length + optionTwo.votes.length))*100}%)
                 </h4>
                 <h3>Would you rather {optionTwo.text}</h3>
                 {answer === "optionTwo" && (
