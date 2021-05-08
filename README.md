@@ -1,5 +1,7 @@
 # Would You Rather Project
 
+https://would-you-rather-bobsolyman.netlify.app/
+
 This is the complete code for the final assessment project for Udacity's React & Redux course.
 
 The `_DATA.js` file represents a fake database and methods that let you access the data.
