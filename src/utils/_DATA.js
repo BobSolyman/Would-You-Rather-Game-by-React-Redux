@@ -1,6 +1,6 @@
 let users = {
   andrew: {
-    id: "andrewhany",
+    id: "andrew",
     name: "Andrew Hany",
     avatarURL:
       "https://avatars.githubusercontent.com/u/68119650?v=4",
@@ -13,7 +13,7 @@ let users = {
     questions: ["8xf0y6ziyjabvozdd253nd", "am8ehyc8byjqgar0jgpub9"],
   },
   shehab: {
-    id: "shehabsolyman",
+    id: "shehab",
     name: "Shehab Solyman",
     avatarURL:
       "https://avatars.githubusercontent.com/u/62481993?v=4",
@@ -24,7 +24,7 @@ let users = {
     questions: ["loxhs1bqm25b708cmbf3g", "vthrdm985a262al8qx3do"],
   },
   aolyland: {
-    id: "alyhegazy",
+    id: "aolyland",
     name: "Aly Hegazy",
     avatarURL: "https://avatars.githubusercontent.com/u/51823470?v=4",
     answers: {
@@ -39,10 +39,10 @@ let users = {
 let questions = {
   "8xf0y6ziyjabvozdd253nd": {
     id: "8xf0y6ziyjabvozdd253nd",
-    author: "sarahedo",
+    author: "andrew",
     timestamp: 1467166872634,
     optionOne: {
-      votes: ["sarahedo"],
+      votes: ["andrew"],
       text: "have horrible short term memory",
     },
     optionTwo: {
@@ -52,66 +52,66 @@ let questions = {
   },
   "6ni6ok3ym7mf1p33lnez": {
     id: "6ni6ok3ym7mf1p33lnez",
-    author: "johndoe",
+    author: "aolyland",
     timestamp: 1468479767190,
     optionOne: {
       votes: [],
       text: "become a superhero",
     },
     optionTwo: {
-      votes: ["johndoe", "sarahedo"],
+      votes: ["aolyland", "andrew"],
       text: "become a supervillain",
     },
   },
   am8ehyc8byjqgar0jgpub9: {
     id: "am8ehyc8byjqgar0jgpub9",
-    author: "sarahedo",
+    author: "andrew",
     timestamp: 1488579767190,
     optionOne: {
       votes: [],
       text: "be telekinetic",
     },
     optionTwo: {
-      votes: ["sarahedo"],
+      votes: ["andrew"],
       text: "be telepathic",
     },
   },
   loxhs1bqm25b708cmbf3g: {
     id: "loxhs1bqm25b708cmbf3g",
-    author: "tylermcginnis",
+    author: "shehab",
     timestamp: 1482579767190,
     optionOne: {
       votes: [],
       text: "be a front-end developer",
     },
     optionTwo: {
-      votes: ["sarahedo"],
+      votes: ["andrew"],
       text: "be a back-end developer",
     },
   },
   vthrdm985a262al8qx3do: {
     id: "vthrdm985a262al8qx3do",
-    author: "tylermcginnis",
+    author: "shehab",
     timestamp: 1489579767190,
     optionOne: {
-      votes: ["tylermcginnis"],
+      votes: ["shehab"],
       text: "find $50 yourself",
     },
     optionTwo: {
-      votes: ["johndoe"],
+      votes: ["aolyland"],
       text: "have your best friend find $500",
     },
   },
   xj352vofupe1dqz9emx13r: {
     id: "xj352vofupe1dqz9emx13r",
-    author: "johndoe",
+    author: "aolyland",
     timestamp: 1493579767190,
     optionOne: {
-      votes: ["johndoe"],
+      votes: ["aolyland"],
       text: "write JavaScript",
     },
     optionTwo: {
-      votes: ["tylermcginnis"],
+      votes: ["shehab"],
       text: "write Swift",
     },
   },
